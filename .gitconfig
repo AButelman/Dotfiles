@@ -1,0 +1,27 @@
+[user]
+	name = Andrés Butelman
+	email = abutelman@brinqa.com
+
+[diff]
+	tool = meld
+[alias]
+	unstage = reset HEAD --
+	df = difftool -y
+	dd = difftool -d
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	l = log --abbrev-commit --pretty=format:'%h [%an %ar] %s' 
+	lf = log --abbrev-commit --stat --pretty=fuller 
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+
+[merge]
+	tool = meld
+[push]
+	default = simple
+[credential]
+	helper = !aws --profile default codecommit credential-helper $@
+	UseHttpPath = true
+[core]
+	autocrlf = input

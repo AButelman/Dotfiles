@@ -136,7 +136,7 @@ alias clean="$BRINQA_PROJECT_HOME/scripts/clean.sh"
 alias start="$BRINQA_PROJECT_HOME/scripts/start.sh"
 alias down="$BRINQA_PROJECT_HOME/scripts/down.sh"
 alias stop="$BRINQA_PROJECT_HOME/scripts/stop.sh"
-
+alias glog="git log --all --graph --decorate"
 
 alias idea='/home/andres/idea-IU-211.6693.111/bin/idea.sh &'
 

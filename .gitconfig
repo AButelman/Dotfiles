@@ -15,6 +15,7 @@
 	l = log --abbrev-commit --pretty=format:'%h [%an %ar] %s' 
 	lf = log --abbrev-commit --stat --pretty=fuller 
 	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+	graph=log --all --graph --decorate --oneline
 
 [merge]
 	tool = meld
@@ -25,3 +26,4 @@
 	UseHttpPath = true
 [core]
 	autocrlf = input
+	excludesfile = /home/andres/.gitignore_global

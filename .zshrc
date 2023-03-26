@@ -152,7 +152,7 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Groovy y Grails
-export PATH=$PATH:"/home/andres/.sdkman/candidates/groovy/3.0.6/bin":"/home/andres/grails-4.0.4/bin"
+export PATH=$PATH:"/home/andres/.sdkman/candidates/groovy/3.0.6/bin":"/home/andres/grails-4.0.4/bin":"/usr/local/go/bin"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/andres/.sdkman"

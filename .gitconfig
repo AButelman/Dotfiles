@@ -1,6 +1,7 @@
 [user]
 	name = Andrés Butelman
 	email = abutelman@brinqa.com
+	signingKey = 9411A787046124D332408186B840FE69A2CB655E
 
 [diff]
 	tool = meld

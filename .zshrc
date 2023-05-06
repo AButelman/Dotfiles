@@ -70,7 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colored-man-pages zsh-autosuggestions docker kubectl)
+plugins=(git colored-man-pages zsh-autosuggestions docker kubectl zsh-shift-select)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -140,8 +140,15 @@ alias glog="git log --all --graph --decorate"
 
 alias idea='/home/andres/idea-IU-211.6693.111/bin/idea.sh &'
 
+alias bat="batcat"
+alias cat="bat"
+
 # Sincronizar todo brinqa-core desde la Notebook a la Desktop, sólo código
 alias sync='rsync -avz --delete --exclude "*.git/" --exclude "*.idea/" --exclude "*.gradle/" --exclude "*node_modules/" --exclude "*static/" --exclude "*build/" $BRINQA_CORE abutelman@desktop:/home/abutelman/Brinqa'
+
+# Para usar z y buscar en los directorios al hacer cd
+eval "$(fasd --init auto)"
+
 
 export CLASSPATH="/usr/local/lib/antlr-4.9-complete.jar:$CLASSPATH"
 
